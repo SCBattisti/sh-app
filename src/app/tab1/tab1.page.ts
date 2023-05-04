@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
 export class Tab1Page {
 
   constructor() {}
+  openLinkInSystemBrowser(url: string) {
+    window.open(url, '_system', 'location=yes')
+  }
 
 }
