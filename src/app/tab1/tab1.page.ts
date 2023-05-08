@@ -12,4 +12,6 @@ export class Tab1Page {
     window.open(url, '_system', 'location=yes')
   }
 
+   
+
 }

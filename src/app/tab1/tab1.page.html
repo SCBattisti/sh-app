@@ -2,44 +2,37 @@
   <ion-toolbar>
     <ion-title>
       <img src="assets/SouthHillsWeb.jpg">
+      <h1>Rescources for Current Students</h1>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <!---------Card 1------------->
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Welcome To South Hills School
-        of Business and Technology</ion-card-title>
-    </ion-card-header>
 
-    <ion-card-content>
-      South Hills School of Business & Technology prepares people for their first job, professional advancement, or a
-      completely new career through a variety of specialized associate degree, diploma, certificate, continuing
-      education, and professional development programs in business, technology, healthcare, criminal justice, and
-      graphic arts. Established in 1970 to fill a regional need for more specialized skills training in Central
-      Pennsylvania, South Hills has two campuses located in State College and Altoona. Our students range from recent
-      high school graduates to returning adults looking to add skills to their résumés for new opportunities.
-    </ion-card-content>
-  </ion-card>
-  <!---------Card 2------------->
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>What Career is Right for You?</ion-card-title>
-      <ion-card-subtitle>Take Our Career Quiz and Find Out!</ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-card-content>
-      Our free, online quiz takes minutes to complete. You'll receive a personalized report with up to 3 of your top
-      matches to our specialized associate degree programs based on your strengths, interests, and personality traits.
-    </ion-card-content>
-    <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/quiz/')">Take the Quiz</ion-button>
-  </ion-card>
-
+    <ion-list lines="none">
+      <ion-item>
+        <ion-button size="large" (click)="openLinkInSystemBrowser('https://ruby.southhills.edu/')">Student Email</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button size="large" (click)="openLinkInSystemBrowser('https://portal.southhills.edu/')">Student Portal</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button size="large" (click)="openLinkInSystemBrowser('https://canvas.southhills.edu/login/ldap')">Canvas</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button size="large" (click)="openLinkInSystemBrowser('https://courseweb.southhills.edu/login/index.php')">Course Web</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button size="large" (click)="openLinkInSystemBrowser('https://www.southhills.edu/virtuallibrary/')">Virtual Library & LIRN</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button size="large" (click)="openLinkInSystemBrowser('https://internnet.southhills.edu/')">InternNet</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button size="large" (click)="openLinkInSystemBrowser('https://www.thestudentbookstore.com/adoption-search')">Order Textbooks @ TheStudentBookstore.com</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button size="large" (click)="openLinkInSystemBrowser('https://www.southhills.edu/ymca/')">State College YMCA Release Form</ion-button>
+      </ion-item>
+    </ion-list>
 </ion-content>

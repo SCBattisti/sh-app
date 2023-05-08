@@ -1,7 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      <img src="assets/SouthHillsWeb.jpg">
+      <h1>Rescources for Current Students</h1>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +10,32 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Rescources</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-list lines="none">
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/student-life/class-times/')">Class Time Schedules</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/student-life/academic-calendar/')">Academic Calendar</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/current-students/student-clubs/')">Student Clubs at South Hills</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/deanslist/')">Dean's List</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/centreready/')">CentreREADY</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/catalog/')">Course Catalog & Student Info</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/help/')">MyIT Tech Support</ion-button>
+    </ion-item>
+  </ion-list>
+
 </ion-content>

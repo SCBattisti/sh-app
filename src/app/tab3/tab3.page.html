@@ -1,7 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      <img src="assets/SouthHillsWeb.jpg">
+      <h1>Rescources for Current Students</h1>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +14,28 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-list lines="none">
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/faculty/')">Faculty Directory</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/staff/')">Staff Directory</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/about/administrative-staff/#academicaffairs')">Contact Academic Affairs</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/about/administrative-staff/#financialaid')">Contact Financial Aid</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/about/administrative-staff/#bursar')">Contact the Bursar's Office</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/about/administrative-staff/#studentservices')">Contact Student & Alumni Services</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="openLinkInSystemBrowser('https://www.southhills.edu/about/administrative-staff/#careerservices')">Contact Career Services</ion-button>
+    </ion-item>
+  </ion-list>
+
 </ion-content>
