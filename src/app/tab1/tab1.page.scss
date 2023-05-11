@@ -1,6 +1,12 @@
-ion-title{
-    text-align: center;
-}
 ion-button{
     text-transform: none;
+    width: 450px;
+    max-width: 500px;
+
+}
+ion-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
